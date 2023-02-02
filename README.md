@@ -52,7 +52,7 @@ require'hemingway'.add_comments{
 <img src="https://github.com/javi-7/img/blob/master/nvim-hemingway/hemingway-html.gif?raw=true" alt="html comments" style="width:1200px;"/>
 
 
-**NOTE:** The colorscheme **silence** from [nvim-poe](https://github.com/javi-7/nvim-poe) is used in these images.
+**NOTE:** The colorscheme **silentium** from [nvim-nyctovim](https://github.com/javi-7/nvim-nyctovim) is used in these images.
 
 ## Support
 - [Paypal](https://www.paypal.com/donate/?hosted_button_id=DT5ZGHRJKYJ8C)
