@@ -1,11 +1,10 @@
 -- ##########################################################
 -- # Maintainer:   Javier Orfo                              #
--- # URL:          https://github.com/javi-7/nvim-hemingway #
+-- # URL:          https://github.com/javio7/nvim-hemingway #
 -- ##########################################################
 
-local Logger = require'osfa.logger':new("Hemingway")
-local table_length = require'osfa.table'.table_length
-local is_string = require'osfa.type'.is_string
+local util = require'hemingway.util'
+local Logger = require'hemingway.logger':new("Hemingway")
 
 local M = {}
 
@@ -226,19 +225,19 @@ M.comments = {
 }
 
 local function is_valid_comment(comment)
-    local size = table_length(comment)
+    local size = util.table_length(comment)
 
-    if size == 1 and comment.single and is_string(comment.single) then
+    if size == 1 and comment.single and util.is_string(comment.single) then
         return true
     end
 
-    if size == 2 and comment.left and comment.right and is_string(comment.left)
-        and is_string(comment.right)
+    if size == 2 and comment.left and comment.right and util.is_string(comment.left)
+        and util.is_string(comment.right)
         then return true
     end
 
     if size == 3 and comment.single and comment.left and comment.right and
-        is_string(comment.single) and is_string(comment.left) and is_string(comment.righ) then
+        util.is_string(comment.single) and util.is_string(comment.left) and util.is_string(comment.righ) then
         return true
     end
     return false
@@ -260,7 +259,7 @@ end
 
 function M.add_comments(new_comments)
     local is_language_valid = is_valid_language(new_comments)
-    if table_length(new_comments) > 0 and is_language_valid then
+    if util.table_length(new_comments) > 0 and is_language_valid then
         table.insert(M.comments, new_comments)
     end
 end

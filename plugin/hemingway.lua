@@ -1,6 +1,6 @@
 -- ##########################################################
 -- # Maintainer:   Javier Orfo                              #
--- # URL:          https://github.com/javi-7/nvim-hemingway #
+-- # URL:          https://github.com/javio7/nvim-hemingway #
 -- ##########################################################
 
 if vim.g.hemingway then
