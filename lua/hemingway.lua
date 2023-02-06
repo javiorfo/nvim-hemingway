@@ -4,7 +4,7 @@
 -- ##########################################################
 
 local util = require'hemingway.util'
-local Logger = require'hemingway.logger':new("Hemingway")
+local Logger = util.Logger
 
 local M = {}
 
@@ -261,32 +261,6 @@ function M.add_comments(new_comments)
     local is_language_valid = is_valid_language(new_comments)
     if util.table_length(new_comments) > 0 and is_language_valid then
         table.insert(M.comments, new_comments)
-    end
-end
-
-local function get_info_string()
-    local ft = vim.bo.filetype or "Unknown"
-    local comment = (string.gsub(vim.inspect(M.comments[ft]), "\n", "")) or "Unknown"
-    return "Filetype: " .. ft, comment
-end
-
-local function popup()
-    local ft, comment = get_info_string()
-    require'plenary.popup'.create({ ft, "", comment },
-        { border = true, pos = "center", title = "Hemingway",
-            line = 0, col = 0, minwidth = 20, minheight = 3, time = 10000 })
-end
-
-function M.info()
-    if M.comments[vim.bo.filetype] then
-        local ok, _ = pcall(popup)
-        if not ok then
-            local ft, comment = get_info_string()
-            print(ft)
-            print(comment)
-        end
-    else
-        Logger:warn("Comments not set for this unknown file.")
     end
 end
 
