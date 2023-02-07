@@ -22,7 +22,7 @@ function M.show()
         local height = 5
 
         local lines = {
-            "┌───────────────────── Hemingway ─────────────────────┐",
+            "┌───────────────────── HEMINGWAY ─────────────────────┐",
             "│                                                     │",
             "│                                                     │",
             "│                                                     │",
@@ -40,6 +40,7 @@ function M.show()
         }
 
         vim.api.nvim_open_win(buf_border, true, opts_border)
+        vim.cmd("syn keyword hemInfoTitle HEMINGWAY | hi link hemInfoTitle Boolean")
 
         local opts_text = {
             relative = 'editor',
@@ -52,6 +53,7 @@ function M.show()
 
         local buf_text = vim.api.nvim_create_buf(false, true)
         vim.api.nvim_open_win(buf_text, true, opts_text)
+        vim.cmd("syn keyword hemInfoFiletype FILETYPE | hi link hemInfoFiletype Boolean")
 
         vim.api.nvim_buf_set_lines(buf_text, 0, -1, true, { ft, "", comment })
 
