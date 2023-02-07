@@ -66,9 +66,15 @@ end
 
 function M.multi_comment()
     if comment then
-        vim.cmd("normal gv")
         local start_line = vim.fn.line("v")
         local end_line = vim.fn.line(".")
+
+        if start_line > end_line then
+            local aux = start_line
+            start_line = end_line
+            end_line = aux
+        end
+
         if comment.left then
             local left_text = get_final_left_line(get_line(start_line))
             set_line(start_line, left_text)
