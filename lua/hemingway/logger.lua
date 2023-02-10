@@ -1,7 +1,7 @@
--- ##########################################################
--- # Maintainer:   Javier Orfo                              #
--- # URL:          https://github.com/javio7/nvim-hemingway #
--- ##########################################################
+-- ###########################################################
+-- # Maintainer: Mr. Charkuils                               #
+-- # URL:        https://github.com/charkuils/nvim-hemingway #
+-- ###########################################################
 
 local M = {}
 local function logger(plugin_name, msg)
