@@ -1,4 +1,5 @@
 # nvim-hemingway
+### :memo: How Ernest comments...
 *nvim-hemingway is a minimal Neovim plugin written in Lua for commenting code.*
 
 ## Caveats
