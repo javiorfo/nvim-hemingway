@@ -5,6 +5,18 @@
 ## Caveats
 - This plugin has been developed on and for Linux following open source philosophy.
 
+## Overview
+| Feature | nvim-hemingway | NOTE |
+| ------- | ------------- | ---- |
+| Single comment | :heavy_check_mark: | Set by `HemingwayComment` |
+| Multiline comment | :heavy_check_mark: | Set by `HemingwayMultiComment` |
+| Comment on Normal Mode | :heavy_check_mark: | Using `HemingwayComment` |
+| Comment on Visual Mode | :heavy_check_mark: | Using `HemingwayMultiComment` |
+| Comment on Insert Mode | :x: |  |
+| Undo comment | :heavy_check_mark: | Executing the same command over a commented line |
+| Supported filetypes | :heavy_check_mark: | [Check this file](https://github.com/charkuils/nvim-hemingway/blob/master/lua/hemingway.lua) |
+| Add comment to filetype not included | :heavy_check_mark: | By the `setup` function |
+
 ## Installation
 `Vim Plug`
 ```vim
