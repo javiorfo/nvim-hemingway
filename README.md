@@ -62,6 +62,3 @@ require'hemingway'.add_comments{
 
 
 **NOTE:** The colorscheme **silentium** from [nvim-nyctovim](https://github.com/charkuils/nvim-nyctovim) is used in these images.
-
-## Support
-- [Paypal](https://www.paypal.com/donate/?hosted_button_id=DT5ZGHRJKYJ8C)
