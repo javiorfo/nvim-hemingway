@@ -62,6 +62,3 @@ require'hemingway'.add_comments{
 
 
 **NOTE:** The colorscheme **silentium** from [nvim-nyctovim](https://github.com/charkuils/nvim-nyctovim) is used in these images.
-
-### Support
-- [Binance](https://www.binance.com/en/my/wallet/account/payment/send): `Pay ID: 546639204`
