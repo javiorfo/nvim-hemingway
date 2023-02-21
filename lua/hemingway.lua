@@ -1,7 +1,7 @@
--- ###########################################################
--- # Maintainer: Mr. Charkuils                               #
--- # URL:        https://github.com/charkuils/nvim-hemingway #
--- ###########################################################
+-- ##########################################################
+-- # Maintainer: Javier Orfo                                #
+-- # URL:        https://github.com/javiorfo/nvim-hemingway #
+-- ##########################################################
 
 local util = require'hemingway.util'
 local Logger = util.Logger
