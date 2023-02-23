@@ -67,6 +67,7 @@ M.comments = {
     diff            = comment_4,
     dns             = comment_5,
     dockerfile      = comment_4,
+    dosini          = comment_5,
     dot             = comment_1,
     dsl             = comment_5,
     eiffel          = comment_3,
