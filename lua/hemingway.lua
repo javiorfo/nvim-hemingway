@@ -37,6 +37,7 @@ local comment_26 = { single = "-- ", left = "/* ", right = " */" }
 local comment_27 = { single = "% ", left = "/* ", right = " */" }
 local comment_28 = { single = '" ' }
 local comment_29 = { single = "' ", left = "/' ", right = " '/" }
+local comment_30 = { left = "{% comment %}", right = "{% endcomment %}" }
 
 M.comments = {
     actionscript    = comment_1,
@@ -124,6 +125,7 @@ M.comments = {
     less            = comment_20,
     lhaskell        = comment_21,
     lilo            = comment_4,
+    liquid          = comment_30,
     lisp            = comment_22,
     llvm            = comment_5,
     lpc             = comment_1,
