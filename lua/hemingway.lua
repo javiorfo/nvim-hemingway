@@ -170,6 +170,7 @@ M.comments = {
     registry        = comment_5,
     remind          = comment_4,
     robot           = comment_4,
+    ron             = comment_8,
     rspec           = comment_4,
     ruby            = comment_4,
     rust            = comment_1,
