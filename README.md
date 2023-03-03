@@ -52,14 +52,9 @@ require'hemingway'.add_comments{
 - To see commentary info about the current file, execute command line `:HemingwayInfo`
 
 ## Screenshots
-### Comments in a Lua file:
+### Comments in Java and XML files:
 
-<img src="https://github.com/javiorfo/img/blob/master/nvim-hemingway/hemingway-lua.gif?raw=true" alt="lua comments" style="width:1200px;"/>
-
-### Comments in a HTML file:
-
-<img src="https://github.com/javiorfo/img/blob/master/nvim-hemingway/hemingway-html.gif?raw=true" alt="html comments" style="width:1200px;"/>
-
+<img src="https://github.com/javiorfo/img/blob/master/nvim-hemingway/hemingway.gif?raw=true" alt="lua comments" style="width:800px;"/>
 
 **NOTE:** The colorscheme **silentium** from [nvim-nyctovim](https://github.com/javiorfo/nvim-nyctovim) is used in these images.
 
