@@ -1,7 +1,7 @@
--- ##########################################################
--- # Maintainer: Javier Orfo                                #
--- # URL:        https://github.com/javiorfo/nvim-hemingway #
--- ##########################################################
+-- ############################################################
+-- # Maintainer: System Malt                                  #
+-- # URL:        https://github.com/systemmalt/nvim-hemingway #
+-- ############################################################
 
 local comments = require'hemingway'.comments
 local Logger = require'hemingway.util'.Logger
