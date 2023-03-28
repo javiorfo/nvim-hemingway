@@ -1,7 +1,7 @@
--- ############################################################
--- # Maintainer: System Malt                                  #
--- # URL:        https://github.com/systemmalt/nvim-hemingway #
--- ############################################################
+-- ##########################################################
+-- # Maintainer: Javier Orfo                                #
+-- # URL:        https://github.com/javiorfo/nvim-hemingway #
+-- ##########################################################
 
 local M = {}
 local function logger(plugin_name, msg)
