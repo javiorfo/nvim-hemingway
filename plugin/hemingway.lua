@@ -1,7 +1,7 @@
--- ##########################################################
--- # Maintainer: Javier Orfo                                #
--- # URL:        https://github.com/javiorfo/nvim-hemingway #
--- ##########################################################
+-- ###########################################################
+-- # Maintainer: Javier Orfo                                 #
+-- # URL:        https://github.com/whiskoder/nvim-hemingway #
+-- ###########################################################
 
 if vim.g.hemingway then
   return
