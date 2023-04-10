@@ -1,6 +1,6 @@
 -- ###########################################################
--- # Maintainer: Javier Orfo                                 #
--- # URL:        https://github.com/whiskoder/nvim-hemingway #
+-- # Maintainer: Mr. Charkuils                               #
+-- # URL:        https://github.com/charkuils/nvim-hemingway #
 -- ###########################################################
 
 if vim.g.hemingway then
