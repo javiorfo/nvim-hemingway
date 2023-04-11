@@ -1,8 +1,3 @@
--- ###########################################################
--- # Maintainer: Mr. Charkuils                               #
--- # URL:        https://github.com/charkuils/nvim-hemingway #
--- ###########################################################
-
 local M = {}
 
 local logger = require'hemingway.logger':new("Hemingway")
