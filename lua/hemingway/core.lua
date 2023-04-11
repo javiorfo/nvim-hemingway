@@ -1,8 +1,3 @@
--- ###########################################################
--- # Maintainer: Mr. Charkuils                               #
--- # URL:        https://github.com/charkuils/nvim-hemingway #
--- ###########################################################
-
 local comments = require'hemingway'.comments
 
 local M = {}
