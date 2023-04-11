@@ -1,8 +1,3 @@
--- ###########################################################
--- # Maintainer: Mr. Charkuils                               #
--- # URL:        https://github.com/charkuils/nvim-hemingway #
--- ###########################################################
-
 local util = require'hemingway.util'
 local Logger = util.Logger
 
