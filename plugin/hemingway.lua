@@ -1,8 +1,3 @@
--- ###########################################################
--- # Maintainer: Mr. Charkuils                               #
--- # URL:        https://github.com/charkuils/nvim-hemingway #
--- ###########################################################
-
 if vim.g.hemingway then
   return
 end
