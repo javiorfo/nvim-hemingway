@@ -17,13 +17,13 @@
 | Add comment to filetype not included | :heavy_check_mark: | By the `setup` function |
 
 ## Installation
-`Vim Plug`
-```vim
-Plug 'charkuils/nvim-hemingway'
-```
 `Packer`
 ```lua
 use 'charkuils/nvim-hemingway'
+```
+`Lazy`
+```lua
+{ 'charkuils/nvim-hemingway' }
 ```
 
 ## Usage
