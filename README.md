@@ -56,3 +56,7 @@ require'hemingway'.add_comments{
 <img src="https://github.com/charkuils/img/blob/master/nvim-hemingway/hemingway.gif?raw=true" alt="lua comments" style="width:800px;"/>
 
 **NOTE:** The colorscheme **malt** from [nvim-whisky](https://github.com/charkuils/nvim-whisky) is used in these images.
+
+## Support Charkuils' Work
+
+<img src="https://github.com/charkuils/img/blob/master/binance/BinancePayQR.png?raw=true" alt="binance" style="width:300px;"/>
