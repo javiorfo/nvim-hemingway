@@ -19,11 +19,17 @@
 ## Installation
 `Packer`
 ```lua
-use 'charkuils/nvim-hemingway'
+use {
+    'charkuils/nvim-hemingway',
+    requires = 'charkuils/nvim-popcorn'
+}
 ```
 `Lazy`
 ```lua
-{ 'charkuils/nvim-hemingway' }
+{
+    'charkuils/nvim-hemingway', lazy = true,
+    dependencies = { 'charkuils/nvim-popcorn' }
+}
 ```
 
 ## Usage

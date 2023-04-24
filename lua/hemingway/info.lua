@@ -1,5 +1,7 @@
 local comments = require'hemingway'.comments
 local Logger = require'hemingway.util'.Logger
+local popcorn = require'popcorn'
+local borders = require'popcorn.borders'
 local M = {}
 
 local function get_info_string()
@@ -11,49 +13,15 @@ end
 function M.show()
     if comments[vim.bo.filetype] then
         local ft, comment = get_info_string()
-        local buf_border = vim.api.nvim_create_buf(false, true)
-        local ui = vim.api.nvim_list_uis()[1]
-        local width = 55
-        local height = 5
-
-        local lines = {
-            "┌───────────────────── HEMINGWAY ─────────────────────┐",
-            "│                                                     │",
-            "│                                                     │",
-            "│                                                     │",
-            "└─────────────────────────────────────────────────────┘",
-        }
-        vim.api.nvim_buf_set_lines(buf_border, 0, -1, true, lines)
-
-        local opts_border = { relative = 'editor',
-            width = width,
-            height = height,
-            col = (ui.width / 2) - (width / 2),
-            row = (ui.height / 2) - (height / 2),
-            style = 'minimal',
-            focusable = false
+        local opts = {
+            width = 55,
+            height = 5,
+            title = { "HEMINGWAY", "Boolean" },
+            border = borders.double_border,
+            content = {{ ft, "String" }, { "" }, { comment }}
         }
 
-        vim.api.nvim_open_win(buf_border, true, opts_border)
-        vim.cmd("syn keyword hemInfoTitle HEMINGWAY | hi link hemInfoTitle Boolean")
-
-        local opts_text = {
-            relative = 'editor',
-            row = opts_border.row + 1,
-            height = opts_border.height - 2,
-            col = opts_border.col + 2,
-            width = opts_border.width - 4,
-            style = 'minimal',
-        }
-
-        local buf_text = vim.api.nvim_create_buf(false, true)
-        vim.api.nvim_open_win(buf_text, true, opts_text)
-        vim.cmd("syn keyword hemInfoFiletype FILETYPE | hi link hemInfoFiletype Boolean")
-
-        vim.api.nvim_buf_set_lines(buf_text, 0, -1, true, { ft, "", comment })
-
-        vim.cmd(string.format("au BufLeave <buffer> bd %d | quit", buf_border))
-        vim.cmd("nnoremap <buffer> <esc> <cmd>quit<cr>")
+        popcorn:new(opts):pop()
     else
         Logger:warn("Comments not set for this unknown file.")
     end
