@@ -27,13 +27,18 @@ use {
 `Lazy`
 ```lua
 {
-    'javiorfo/nvim-hemingway', lazy = true,
-    dependencies = { 'javiorfo/nvim-popcorn' }
+    'javiorfo/nvim-hemingway',
+    lazy = true,
+    dependencies = { 'javiorfo/nvim-popcorn' },
+    keys = {
+        { "<leader>co", "<Plug>HemingwayComment" },
+        { "<leader>co", "<Plug>HemingwayMultiComment", mode = "v" },
+    }
 }
 ```
 
 ## Usage
-- Set mappings in *init.vim* or *init.lua*
+- Set mappings in *init.lua* (Packer)
 ```lua
 local opts = { noremap = true, silent = true }
 
