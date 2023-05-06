@@ -37,6 +37,7 @@ local comment_30 = { left = "{% comment %}", right = "{% endcomment %}" }
 M.comments = {
     actionscript    = comment_1,
     ada             = comment_3,
+    assembly        = comment_5,
     awk             = comment_4,
     c               = comment_1,
     cabal           = comment_3,
