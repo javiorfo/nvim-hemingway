@@ -131,6 +131,7 @@ M.comments = {
     lss             = comment_4,
     lua             = comment_23,
     lynx            = comment_4,
+    make            = comment_4,
     markdown        = comment_2,
     matlab          = comment_24,
     mel             = comment_1,
