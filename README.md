@@ -67,3 +67,8 @@ require'hemingway'.add_comments{
 <img src="https://github.com/javiorfo/img/blob/master/nvim-hemingway/hemingway.gif?raw=true" alt="lua comments" style="width:800px;"/>
 
 **NOTE:** The colorscheme **umbra** from [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia) is used in these images.
+
+---
+
+### Donate
+- [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
