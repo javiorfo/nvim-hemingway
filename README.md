@@ -20,16 +20,16 @@
 `Packer`
 ```lua
 use {
-    'javiorfo/nvim-hemingway',
-    requires = 'javiorfo/nvim-popcorn'
+    'caosystema/nvim-hemingway',
+    requires = 'caosystema/nvim-popcorn'
 }
 ```
 `Lazy`
 ```lua
 {
-    'javiorfo/nvim-hemingway',
+    'caosystema/nvim-hemingway',
     lazy = true,
-    dependencies = { 'javiorfo/nvim-popcorn' },
+    dependencies = { 'caosystema/nvim-popcorn' },
     keys = {
         { "<leader>co", "<Plug>HemingwayComment" },
         { "<leader>co", "<Plug>HemingwayMultiComment", mode = "v" },
@@ -50,7 +50,7 @@ vim.api.nvim_set_keymap('v', '<leader>co', '<Plug>HemingwayMultiComment<CR>', op
 - Executing the map corresponding to `HemingwayComment` with the cursor in a specific line, it will comment the aforementioned line with the corresponding **comment string** of the file.
 - In **VISUAL MODE**. Executing the map corresponding to `HemingwayMultiComment` with the cursor in a specific line or multiple lines will comment the aforementioned line (or lines) with the **comment string** of the file.
 - Executing any of these commands in a commented line  will uncomment that line (or lines)
-- The main strings used for comments are the ones taken from [this file](https://github.com/javiorfo/nvim-hemingway/blob/master/lua/hemingway.lua). If there is no value for the file you are using, you can set it in your personal Neovim init.lua:
+- The main strings used for comments are the ones taken from [this file](https://github.com/caosystema/nvim-hemingway/blob/master/lua/hemingway.lua). If there is no value for the file you are using, you can set it in your personal Neovim init.lua:
 ```lua
 -- Depending on the filetype comment style
 require'hemingway'.add_comments{
@@ -64,9 +64,9 @@ require'hemingway'.add_comments{
 ## Screenshots
 ### Comments in Java and XML files:
 
-<img src="https://github.com/javiorfo/img/blob/master/nvim-hemingway/hemingway.gif?raw=true" alt="lua comments" style="width:800px;"/>
+<img src="https://github.com/caosystema/img/blob/master/nvim-hemingway/hemingway.gif?raw=true" alt="lua comments" style="width:800px;"/>
 
-**NOTE:** The colorscheme **umbra** from [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia) is used in these images.
+**NOTE:** The colorscheme **umbra** from [nvim-nyctophilia](https://github.com/caosystema/nvim-nyctophilia) is used in these images.
 
 ---
 
