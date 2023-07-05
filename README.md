@@ -64,11 +64,12 @@ require'hemingway'.add_comments{
 ## Screenshots
 ### Comments in Java and XML files:
 
-<img src="https://github.com/caosystema/img/blob/master/nvim-hemingway/hemingway.gif?raw=true" alt="lua comments" style="width:800px;"/>
+<img src="https://github.com/caosystema/img/blob/master/nvim-hemingway/hemingway.gif?raw=true" alt="lua comments" />
 
 **NOTE:** The colorscheme **umbra** from [nvim-nyctophilia](https://github.com/caosystema/nvim-nyctophilia) is used in these images.
 
 ---
 
-### Donate
+### Support CaoSystema's Work
+- [Binance](https://raw.githubusercontent.com/caosystema/img/master/BinancePayQR.png)
 - [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
