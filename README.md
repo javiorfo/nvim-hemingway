@@ -13,23 +13,23 @@
 | Comment on Visual Mode | :heavy_check_mark: | Using `HemingwayMultiComment` |
 | Comment on Insert Mode | :x: |  |
 | Undo comment | :heavy_check_mark: | Executing the same command over a commented line |
-| Supported filetypes | :heavy_check_mark: | [Check this file](https://github.com/javiorfo/nvim-hemingway/blob/master/lua/hemingway.lua) |
+| Supported filetypes | :heavy_check_mark: | [Check this file](https://github.com/orfosys/nvim-hemingway/blob/master/lua/hemingway.lua) |
 | Add comment to filetype not included | :heavy_check_mark: | By the `setup` function |
 
 ## Installation
 `Packer`
 ```lua
 use {
-    'javiorfo/nvim-hemingway',
-    requires = 'javiorfo/nvim-popcorn'
+    'orfosys/nvim-hemingway',
+    requires = 'orfosys/nvim-popcorn'
 }
 ```
 `Lazy`
 ```lua
 {
-    'javiorfo/nvim-hemingway',
+    'orfosys/nvim-hemingway',
     lazy = true,
-    dependencies = { 'javiorfo/nvim-popcorn' },
+    dependencies = { 'orfosys/nvim-popcorn' },
     cmd = { "HemingwayInfo" },
     keys = {
         { "<leader>co", "<Plug>HemingwayComment" },
@@ -51,7 +51,7 @@ vim.api.nvim_set_keymap('v', '<leader>co', '<Plug>HemingwayMultiComment<CR>', op
 - Executing the map corresponding to `HemingwayComment` with the cursor in a specific line, it will comment the aforementioned line with the corresponding **comment string** of the file.
 - In **VISUAL MODE**. Executing the map corresponding to `HemingwayMultiComment` with the cursor in a specific line or multiple lines will comment the aforementioned line (or lines) with the **comment string** of the file.
 - Executing any of these commands in a commented line  will uncomment that line (or lines)
-- The main strings used for comments are the ones taken from [this file](https://github.com/javiorfo/nvim-hemingway/blob/master/lua/hemingway.lua). If there is no value for the file you are using, you can set it in your personal Neovim init.lua:
+- The main strings used for comments are the ones taken from [this file](https://github.com/orfosys/nvim-hemingway/blob/master/lua/hemingway.lua). If there is no value for the file you are using, you can set it in your personal Neovim init.lua:
 ```lua
 -- Depending on the filetype comment style
 require'hemingway'.add_comments{
@@ -65,12 +65,12 @@ require'hemingway'.add_comments{
 ## Screenshots
 ### Comments in Java and XML files:
 
-<img src="https://github.com/javiorfo/img/blob/master/nvim-hemingway/hemingway.gif?raw=true" alt="lua comments" />
+<img src="https://github.com/orfosys/img/blob/master/nvim-hemingway/hemingway.gif?raw=true" alt="lua comments" />
 
-**NOTE:** The colorscheme **umbra** from [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia) is used in these images.
+**NOTE:** The colorscheme **umbra** from [nvim-nyctophilia](https://github.com/orfosys/nvim-nyctophilia) is used in these images.
 
 ---
 
 ### Donate
-- **Bitcoin** [(QR)](https://raw.githubusercontent.com/javiorfo/img/master/crypto/bitcoin.png)  `1GqdJ63RDPE4eJKujHi166FAyigvHu5R7v`
+- **Bitcoin** [(QR)](https://raw.githubusercontent.com/orfosys/img/master/crypto/bitcoin.png)  `1GqdJ63RDPE4eJKujHi166FAyigvHu5R7v`
 - [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
