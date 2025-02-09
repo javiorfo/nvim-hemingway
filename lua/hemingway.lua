@@ -1,7 +1,7 @@
-local util = require'hemingway.util'
-local Logger = util.Logger
+local util       = require 'hemingway.util'
+local Logger     = util.Logger
 
-local M = {}
+local M          = {}
 
 local comment_1  = { single = "// ", left = "/* ", right = " */" }
 local comment_2  = { left = "<!-- ", right = " -->" }
@@ -34,7 +34,7 @@ local comment_28 = { single = '" ' }
 local comment_29 = { single = "' ", left = "/' ", right = " '/" }
 local comment_30 = { left = "{% comment %}", right = "{% endcomment %}" }
 
-M.comments = {
+M.comments       = {
     actionscript    = comment_1,
     ada             = comment_3,
     asm             = comment_4,
@@ -220,6 +220,7 @@ M.comments = {
     wget            = comment_4,
     wikipedia       = comment_2,
     wml             = comment_4,
+    xhtml           = comment_2,
     xml             = comment_2,
     yaml            = comment_4,
     zig             = comment_8,
